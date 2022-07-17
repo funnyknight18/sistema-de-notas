@@ -1,0 +1,25 @@
+*{ 
+   background-color: rgb(202, 226, 122);
+}
+
+input {
+    padding: 10px;
+    width: 300px;
+  }
+
+header {
+    text-align: center;
+  }
+
+  button {
+    background: green;
+    border: 0;
+    color: #fff;
+    padding: 10px 20px;
+  }
+
+  button:hover,
+    button:focus {
+      background: darkgreen;
+      cursor: pointer;
+ }
