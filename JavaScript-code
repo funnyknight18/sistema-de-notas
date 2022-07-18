@@ -8,7 +8,8 @@ const $button = document.querySelector('[data-js="button-login"]');
 
 $button.addEventListener('click' , Sendlogin , false ); 
 
-function Sendlogin () {  
+function Sendlogin (event) { 
+  event.preventDefault(); 
   if( $senha.value === '' || $codigoAluno === '')
     return window.alert('Prencha todas as informações'); 
     nextpage(); 
