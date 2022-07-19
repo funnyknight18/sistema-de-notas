@@ -9,12 +9,46 @@ const $matematica = document.querySelector('[data-js="Matematica"]');
 
 $button_requeste.addEventListener( 'click' , calculatorNote , false );
 
+
+const materias = [
+   'matematica', 'portugues', 'ciencia'
+]; 
+
 function calculatorNote (event) { 
-    event.preventDefault(); 
-   var sum = Number($portugues.value) + Number($matematica.value) + Number($ciencia.value) / 3 ; 
-   $portugues.value >= 6 ? console.log('aprovado em portugues') : console.log('recuperacao em portgues'); 
-   $ciencia.value >= 6 ? console.log('aprovado em ciencia') : console.log('recuperaçao em ciencias'); 
-   $matematica.value >= 6 ? console.log('aprovado em matematica') : console.log('recuperaçao em matematica'); 
+    event.preventDefault();
+
+    
+  if(  $ciencia.value === '' && matematica === '' && portugues === ''){ 
+     return window.alert('Preencha os campos em branco com a suas notas');  
+  } else{ 
+    menorQue10();
+    reprovado();
+  }
 } 
 
+function  reprovado( portugues , ciencia , matematica) { 
+    console.log(ciencia); 
+    if( $ciencia.value <= 6 ){ 
+        console.log(`Reprovado em ${materias[2]}`); 
+      }
+      if( matematica <= 6 ){ 
+        console.log(`Reprovado em ${materias[1]}`); 
+      }
+      if( portugues <= 6 ){ 
+        console.log(`Reprovado em ${materias[0]}`); 
+      }
+}
+
+function menorQue10 ( portugues , ciencia , matematica ) { 
+    if( portugues > 10 && matematica > 10 && $ciencia.value > 10 ){ 
+        console.log('As notas teram que ser entre 0 á 10'); 
+    } 
+
+}
+
 })(); 
+
+
+// tem que trocar todas as propriedade para exemple.value; 
+
+ // proximo passo é mecher no html e resolver o input... 
