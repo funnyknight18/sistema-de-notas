@@ -23,3 +23,10 @@ header {
       background: darkgreen;
       cursor: pointer;
  }
+
+ header .button_next { 
+  background: red;
+  border: 0;
+  color: #fff;
+  padding: 10px 20px;
+ }
