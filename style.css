@@ -1,5 +1,5 @@
 *{ 
-   background-color: rgb(202, 226, 122);
+   background-color: rgb(70, 218, 205);
 }
 
 input {
@@ -12,7 +12,7 @@ header {
   }
 
   button {
-    background: green;
+    background: rgb(84, 173, 84);
     border: 0;
     color: #fff;
     padding: 10px 20px;
@@ -20,7 +20,7 @@ header {
 
   button:hover,
     button:focus {
-      background: darkgreen;
+      background: rgb(16, 71, 16);
       cursor: pointer;
  }
 
@@ -36,4 +36,17 @@ header .button_back {
   border: 0;
   color: #fff;
   padding: 10px 20px;
+}
+
+
+header #button_clean { 
+  background: rgb(39, 39, 92);
+  border: 0;
+  color: #fff;
+  padding: 8px 15px;
+}
+
+
+header #texte_info .h1 { 
+  background-color: #fff;
 }
