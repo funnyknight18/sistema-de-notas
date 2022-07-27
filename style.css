@@ -47,6 +47,11 @@ header #button_clean {
 }
 
 
-header #texte_info .h1 { 
-  background-color: #fff;
+.button_cadastro { 
+  background-color: #800000;
+  color: white;
+}
+
+h1 , h3 { 
+  font-family: arial;
 }
